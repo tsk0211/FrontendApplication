@@ -1,12 +1,8 @@
 import './App.css'
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
-
-  return (
-    <>
-      <h2>Scaffold a new project</h2>
-    </>
-  )
+  return <AppRoutes />;
 }
 
 export default App
