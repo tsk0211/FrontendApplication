@@ -1,0 +1,69 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  position: relative;
+}
+
+.transition-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Darker overlay */
+  z-index: 10;
+  display: none;
+}
+
+.mainContainer.show-transition .transition-layer {
+  display: block;
+}
+
+/* Color Variables (Dark Theme) */
+:root {
+  --dark-bg: #121212;
+  --darker-bg: #1E1E1E;
+  --light-text: #E0E0E0;
+  --primary-color: #BB86FC;
+
+  --red-close-color: #F0FF0000;
+  --red-color: #FF0000;
+  --red-kam: linear-gradient(#FF0000, #000);
+  /* Purple accent */
+  --primary-hover: #9C68E0;
+  --secondary-color: #03DAC6;
+  /* Teal accent */
+  --secondary-hover: #02B8A4;
+  --border-color: #333333;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}

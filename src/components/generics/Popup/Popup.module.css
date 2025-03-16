@@ -1,0 +1,59 @@
+/* Popup.module.css (Updated for Wider Popup) */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.popup {
+  background-color: var(--darker-bg);
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  width: 90%;
+  /* Increased width to 90% */
+  max-width: 1200px;
+  /* Increased max-width for very large screens */
+  position: relative;
+  border: 1px solid var(--border-color);
+}
+
+.closeButton {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: var(--red-close-color);
+  color: var(--light-text);
+  border: none;
+  font-size: 1.2em;
+  padding: 8px 12px;
+  border-radius: 10%;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: background-color 0.15s linear;
+}
+
+.closeButton::before {
+  content: '\00D7';
+  /* Close sign (×) */
+  font-size: 2rem;
+  color: #fff;
+  /* White color for contrast */
+  cursor: pointer;
+
+}
+
+.closeButton:hover {
+  background-color: var(--red-color);
+  color: #F8F8F6;
+}

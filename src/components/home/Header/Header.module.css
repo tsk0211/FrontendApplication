@@ -1,0 +1,36 @@
+/* Header.module.css */
+
+.header {
+    background-color: var(--darker-bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.signInButton {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.signInButton:hover {
+    background-color: var(--primary-hover);
+}

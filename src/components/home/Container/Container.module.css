@@ -1,0 +1,30 @@
+/* Container.module.css */
+
+.container {
+    padding: 50px;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--light-text);
+}
+
+.container pre {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 80%;
+    margin: 20px auto;
+    border: 1px solid var(--border-color);
+}

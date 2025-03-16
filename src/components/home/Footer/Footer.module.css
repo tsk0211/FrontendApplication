@@ -1,0 +1,10 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: var(--darker-bg);
+  color: var(--light-text);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid var(--border-color);
+}
