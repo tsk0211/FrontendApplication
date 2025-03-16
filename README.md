@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
+# Vite Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Vite-powered project.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+Before you begin, make sure you have the following installed:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **Node.js** (v14.18.0 or higher) - You can download it from [nodejs.org](https://nodejs.org/).
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Steps to Install and Run the Application
+
+1. **Clone the repository**:
+
+    Clone the project to your local machine by running the following command in your terminal or command prompt:
+
+```bash
+git clone https://github.com/tsk0211/FrontendApplication.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate into the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Change your working directory to the project folder:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd FrontendApplication
 ```
+
+Install dependencies:
+
+Run the following command to install all required dependencies:
+
+```bash
+npm install
+```
+
+Or if you prefer using Yarn, run:
+
+```bash
+yarn install
+```
+
+Running the Application
+Once the dependencies are installed, you can run the application locally.
+
+Start the development server:
+
+Run the following command to start the development server:
+
+```bash
+npm run dev
+```
+
+Or with Yarn:
+
+```bash
+yarn dev
+```
+
+This will start the server at `http://localhost:3000/` (or a different port if configured). Open this URL in your browser to see the app in action.
+
+Building for Production
+When you're ready to build the project for production, follow these steps:
+
+Build the application:
+
+To create an optimized production build, run:
+
+```bash
+npm run build
+```
+
+Or with Yarn:
+
+```bash
+yarn build
+```
+
+This will generate a dist/ directory with the production-ready code.
+
+Preview the production build:
+
+To preview the production build locally, you can run:
+
+```bash
+npm run preview
+```
+
+Or with Yarn:
+
+```bash
+yarn preview
+```
+
+This will serve the optimized build at http://localhost:5000/ for testing.
